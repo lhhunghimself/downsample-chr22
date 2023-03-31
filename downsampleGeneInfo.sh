@@ -7,7 +7,8 @@ chr=$2
 
 
 geneinfobase=$(basename $geneinfo)
-head -1 $geneinfo > "${geneinfobase::-4}.$chr.tsv"
-echo "cat $geneinfo | grep '$chr' >> ${geneinfobase::-4}.$chr.tsv"
-eval "cat $geneinfo | grep '$chr' >> ${geneinfobase::-4}.$chr.tsv"
+head -1 $geneinfo > "${geneinfobase%.tsv}.$chr.tsv"
+echo "cat $geneinfo | grep '$chr' >> ${geneinfobase%.tsv}.$chr.tsv"
+eval "cat $geneinfo | grep '$chr' >> ${geneinfobase%.tsv}.$chr.tsv"
+
 
