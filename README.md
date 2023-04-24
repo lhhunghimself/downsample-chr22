@@ -31,6 +31,6 @@ To use these scripts, follow the steps below:
 
 4. **downsampleReference.pl**: This Perl script downsamples a reference genome FASTA file by removing all other chromosomes except the specified one. Usage: `./downsampleReference.pl GRCh38.d1.vd1.fa chr > GRCh38.d1.vd1.chr22.fa`
 
-4. **downsampleReference_T2T.pl**: This Perl script has same function as **downsampleReference.pl** and is suitable for downsampling T2T FASTA file. Usage: `./downsampleReference.pl GRCh38.d1.vd1.fa chr > GRCh38.d1.vd1.chr22.fa`
+5. **downsampleReference_T2T.pl**: This Perl script has same function as **downsampleReference.pl** and is suitable for downsampling T2T FASTA file. Usage: `./downsampleReference.pl GRCh38.d1.vd1.fa chr > GRCh38.d1.vd1.chr22.fa`
 
 Remember to replace the input file names and chromosome names with your own data and desired chromosome.
